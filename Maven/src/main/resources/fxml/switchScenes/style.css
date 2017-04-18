@@ -1,0 +1,9 @@
+.label {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

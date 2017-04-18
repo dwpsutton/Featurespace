@@ -1,0 +1,12 @@
+/*apply style all TextFields*/
+.text-field{
+	-fx-background-color: black;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+.label{
+	-fx-font-weight: bold;
+    -fx-font-size: 14.0px;
+}
+

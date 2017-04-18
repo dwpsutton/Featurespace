@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane prefHeight="360.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="/fxml/table/style.css"
+            fx:controller="fxml.table.Controller">
+    <top>
+        <VBox BorderPane.alignment="TOP_LEFT">
+
+            <fx:include source="menu.fxml"/>
+
+            <HBox prefHeight="38.0" prefWidth="641.0" spacing="10.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Label text="Search">
+                        <HBox.margin>
+                            <Insets bottom="10.0" left="20.0" right="10.0" top="5.0"/>
+                        </HBox.margin>
+                    </Label>
+                    <TextField id="textField1" fx:id="searchText" onKeyReleased="#keyReleased">
+                        <HBox.margin>
+                            <Insets top="5.0"/>
+                        </HBox.margin>
+                    </TextField>
+                    <Label fx:id="stateLabel" text="State">
+                        <HBox.margin>
+                            <Insets top="5.0"/>
+                        </HBox.margin>
+                    </Label>
+                </children>
+                <BorderPane.margin>
+                    <Insets/>
+                </BorderPane.margin>
+            </HBox>
+        </VBox>
+
+    </top>
+    <center>
+        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="titleCol" minWidth="400.0" prefWidth="75.0" text="Title"/>
+                <TableColumn fx:id="stockCol" minWidth="100.0" prefWidth="75.0" text="Stock"/>
+                <TableColumn fx:id="yearCol" minWidth="100.0" prefWidth="75.0" text="Year"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

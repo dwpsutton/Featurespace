@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="/fxml/primes/style.css"
+            fx:controller="fxml.primes.task.Controller">
+
+    <top>
+        <VBox spacing="5.0">
+            <children>
+                <TextField fx:id="textField" maxWidth="-Infinity" text="100000"/>
+                <CheckBox fx:id="checkBox" mnemonicParsing="false" text="Parallel"/>
+                <HBox>
+                    <children>
+                        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startClick" text="Start">
+                            <HBox.margin>
+                                <Insets right="5.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelClick" text="Cancel"/>
+                    </children>
+                </HBox>
+                <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0"/>
+                <Label fx:id="stateLabel" text="Label"/>
+                <Label fx:id="resultLabel" text="Label"/>
+            </children>
+        </VBox>
+    </top>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</BorderPane>

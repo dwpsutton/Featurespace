@@ -1,0 +1,14 @@
+/*apply style all TextFields*/
+.text-field{
+	-fx-background-color: black;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+/*apply to node with id="#cssStyle"*/
+#cssStyle{
+    -fx-text-fill: blue;
+    -fx-font-size: 16;
+    -fx-font-family: monospace;
+}
+
